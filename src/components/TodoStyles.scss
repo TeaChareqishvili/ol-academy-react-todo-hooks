@@ -53,8 +53,9 @@ li{
 
 }
 .inputWrapper{
-   
-
+  
+  @include flex;
+  
     input{
        @include input;
     }
@@ -77,6 +78,7 @@ li{
 
 .todo{
     @include flex;
+  
 
     button{
        @include button;
