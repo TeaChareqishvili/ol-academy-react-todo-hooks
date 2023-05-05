@@ -1,0 +1,98 @@
+
+body{
+    background-color: #9370DB;
+    width:100vw;
+    height:100vh;
+}
+li{
+    list-style:  none;
+    color:aliceblue;
+    font-size:1.5rem;
+    text-align:left;
+
+}
+
+@mixin input {
+    padding:10px 20px;
+    background-color:rgb(224, 228, 230);
+    outline: none;
+    border:none;
+    border-radius:5px;
+    margin-right:10px;
+    color:rgb(14, 14, 103);
+    font-style:italic;
+}
+
+@mixin button{
+    padding: 10px 20px;
+    background-color: rgb(224, 228, 230);
+    border-radius:5px;
+    color:rgb(14, 14, 103);
+    cursor:pointer;
+    border:none;
+    font-weight:bold;
+    margin:10px;
+
+  
+}
+
+@mixin  flex{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+
+}
+.listWrapper{
+    @include flex;
+    border: solid 2px #FDF5E6;
+    width:50%;
+    margin: 30px auto;
+    padding: 30px 0;
+    background-color:DarkSlateBlue;
+
+}
+.inputWrapper{
+   
+
+    input{
+       @include input;
+    }
+
+    button{
+       @include button;
+       
+    }
+    button:hover{
+        background-color:#9370DB;
+    }
+
+}
+
+.header{
+    text-align: center;
+    color:aliceblue;
+    font-size:2rem;
+}
+
+.todo{
+    @include flex;
+
+    button{
+       @include button;
+    }
+    button:hover{
+        background-color:#9370DB;
+    }
+
+    input{
+       @include input;
+    }
+}
+
+p{
+    list-style:  none;
+    color:aliceblue;
+    font-size:1.5rem;
+    text-align:center;
+}
