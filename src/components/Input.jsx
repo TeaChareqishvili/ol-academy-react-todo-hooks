@@ -1,8 +1,6 @@
 import "./TodoStyles.scss";
 import { useState } from "react";
 
-
-
 function Input(props) {
   const [value, setValue] = useState("");
 
@@ -30,5 +28,4 @@ function Input(props) {
   );
 }
 
-export  {Input};
-
+export { Input };

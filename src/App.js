@@ -4,8 +4,8 @@ import { TodoList } from "./components/TodoList";
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <TodoList/>
+      <Header />
+      <TodoList />
     </div>
   );
 }
