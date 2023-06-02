@@ -14,6 +14,11 @@ function Input(props) {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleClick();
+    }
+  };
 
   return (
     <div className="inputWrapper">
@@ -22,6 +27,7 @@ function Input(props) {
         placeholder="Your task is..."
         value={value}
         onChange={handleChange}
+        onKeyDown={handleKeyDown}
       />
       <button onClick={handleClick}>Add List</button>
     </div>
