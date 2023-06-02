@@ -30,8 +30,15 @@ function TodoList() {
     setTodo(updatedTodo);
   };
 
+  
   const handleEditSave = (id) => {
     const updatedTodo = [...todo];
+    const editedValue = updatedTodo[id].text;
+    const isDuplicate = updatedTodo.some((item, index) => item.text === editedValue && index !== id);
+    if (isDuplicate) {
+      alert("Error: The same list already exists!");
+      return;
+    }
     updatedTodo[id].editing = false;
     setTodo(updatedTodo);
   };
@@ -75,6 +82,9 @@ function TodoList() {
         return updatedTodo;
       });
     }
+  };
+  const deleteAllTasks = () => {
+    setTodo([]);
   };
 
   return (
@@ -127,6 +137,9 @@ function TodoList() {
           </ul>
           <button className="deleteMarked" onClick={deleteCompletedTasks}>
             Delete Completed Tasks
+          </button>
+          <button className="deleteAll" onClick={deleteAllTasks}>
+            Delete All Tasks
           </button>
         </div>
       ) : (

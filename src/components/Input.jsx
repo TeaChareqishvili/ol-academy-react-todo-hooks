@@ -1,22 +1,23 @@
 import "./TodoStyles.scss";
 import { useState } from "react";
-
-function Input(props) {
+function Input({ handleClick }) {
   const [value, setValue] = useState("");
 
-  const handleClick = () => {
-    if (value) {
-      props.handleClick(value);
+  const handleInputChange = (event) => {
+    setValue(event.target.value);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleClick(value);
       setValue("");
     }
   };
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-  const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
-      handleClick();
+  const handleClickButton = () => {
+    if (value) {
+      handleClick(value);
+      setValue("");
     }
   };
 
@@ -26,12 +27,12 @@ function Input(props) {
         type="text"
         placeholder="Your task is..."
         value={value}
-        onChange={handleChange}
+        onChange={handleInputChange}
         onKeyDown={handleKeyDown}
       />
-      <button onClick={handleClick}>Add List</button>
+      <button onClick={handleClickButton}>Add List</button>
     </div>
   );
 }
 
-export { Input };
+export {Input}
