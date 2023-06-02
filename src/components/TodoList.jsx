@@ -6,6 +6,11 @@ function TodoList() {
   const [todo, setTodo] = useState([]);
 
   const handleClick = (value) => {
+    const isDuplicate = todo.some((item) => item.text === value);
+  if (isDuplicate) {
+    alert("Error: The same list already exists!");
+    return;
+  }
     setTodo([...todo, { text: value, status: false }]);
   };
 
