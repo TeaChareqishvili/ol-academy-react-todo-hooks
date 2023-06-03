@@ -35,4 +35,4 @@ function Input({ handleClick }) {
   );
 }
 
-export {Input}
+export { Input };
