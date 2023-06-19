@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "//TeaChareqishvili.github.io/ol-academy-react-todo-hooks/static/css/main.524b3f3e.css",
+    "main.js": "//TeaChareqishvili.github.io/ol-academy-react-todo-hooks/static/js/main.edee5c08.js",
+    "index.html": "//TeaChareqishvili.github.io/ol-academy-react-todo-hooks/index.html",
+    "main.524b3f3e.css.map": "//TeaChareqishvili.github.io/ol-academy-react-todo-hooks/static/css/main.524b3f3e.css.map",
+    "main.edee5c08.js.map": "//TeaChareqishvili.github.io/ol-academy-react-todo-hooks/static/js/main.edee5c08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.524b3f3e.css",
+    "static/js/main.edee5c08.js"
+  ]
+}
