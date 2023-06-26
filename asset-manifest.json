@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/todo-hooks/static/css/main.524b3f3e.css",
-    "main.js": "/todo-hooks/static/js/main.edee5c08.js",
-    "index.html": "/todo-hooks/index.html",
-    "main.524b3f3e.css.map": "/todo-hooks/static/css/main.524b3f3e.css.map",
-    "main.edee5c08.js.map": "/todo-hooks/static/js/main.edee5c08.js.map"
+    "main.css": "/ol-academy-react-todo-hooks/static/css/main.524b3f3e.css",
+    "main.js": "/ol-academy-react-todo-hooks/static/js/main.edee5c08.js",
+    "index.html": "/ol-academy-react-todo-hooks/index.html",
+    "main.524b3f3e.css.map": "/ol-academy-react-todo-hooks/static/css/main.524b3f3e.css.map",
+    "main.edee5c08.js.map": "/ol-academy-react-todo-hooks/static/js/main.edee5c08.js.map"
   },
   "entrypoints": [
     "static/css/main.524b3f3e.css",
