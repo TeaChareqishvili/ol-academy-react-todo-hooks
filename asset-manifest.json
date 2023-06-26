@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "//TeaChareqishvili.github.io/todo-hooks/static/css/main.524b3f3e.css",
-    "main.js": "//TeaChareqishvili.github.io/todo-hooks/static/js/main.edee5c08.js",
-    "index.html": "//TeaChareqishvili.github.io/todo-hooks/index.html",
-    "main.524b3f3e.css.map": "//TeaChareqishvili.github.io/todo-hooks/static/css/main.524b3f3e.css.map",
-    "main.edee5c08.js.map": "//TeaChareqishvili.github.io/todo-hooks/static/js/main.edee5c08.js.map"
+    "main.css": "/todo-hooks/static/css/main.524b3f3e.css",
+    "main.js": "/todo-hooks/static/js/main.edee5c08.js",
+    "index.html": "/todo-hooks/index.html",
+    "main.524b3f3e.css.map": "/todo-hooks/static/css/main.524b3f3e.css.map",
+    "main.edee5c08.js.map": "/todo-hooks/static/js/main.edee5c08.js.map"
   },
   "entrypoints": [
     "static/css/main.524b3f3e.css",
